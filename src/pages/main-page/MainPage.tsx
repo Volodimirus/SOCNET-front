@@ -2,6 +2,7 @@ import React from "react";
 
 import AppHeader from "../../components/app-header/AppHeader";
 import AppNavigation from "../../components/app-navigation/AppNavigation";
+import AdBlock from "../../components/ad-block/AdBlock";
 
 import { ThemeContext, themes } from "../../contexts/ThemeContext";
 import ContactsAndSales from "../../components/contacts-and-sales/ContactsAndSales";
@@ -39,6 +40,7 @@ export default function MainPage() {
                                     setTheme(themes.light);
                             }}
                         />
+                        <AdBlock />
                     </>
                 );
             }}
