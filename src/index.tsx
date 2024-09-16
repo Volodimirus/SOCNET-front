@@ -13,11 +13,6 @@ const router = createBrowserRouter([
     },
 ]);
 
-const theme = window?.localStorage?.getItem("theme");
-document
-    .getElementById("root")
-    ?.setAttribute("data-theme", theme ? theme : "light");
-
 const root = createRoot(document.getElementById("root") as HTMLElement);
 
 root.render(
