@@ -1,4 +1,10 @@
 .contacts {
     column-gap: 16px;
-    padding-left: 40px;
+    position: relative;
+
+    &--right img {
+        position: absolute;
+        bottom: 0;
+        right: 25px;
+    }
 }
