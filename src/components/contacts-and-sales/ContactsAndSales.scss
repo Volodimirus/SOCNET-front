@@ -1,0 +1,38 @@
+.contacts-and-sales {
+    font-family: inherit;
+    font-weight: 500;
+    display: flex;
+    column-gap: 32px;
+    margin-top: 22px;
+    align-items: center;
+
+    &--item {
+        width: 622px;
+        max-height: 222px;
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+
+        h3 {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
+
+// DARK THEME
+
+html[data-theme="dark"] .contacts-and-sales {
+    color: #fff;
+
+    p {
+        color: rgba(248, 250, 255, 32%);
+    }
+}

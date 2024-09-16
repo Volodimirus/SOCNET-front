@@ -1,0 +1,23 @@
+.user-block {
+    &__menu {
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+        background-color: transparent;
+    }
+
+    &__avatar {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+// DARK MODE
+
+html[data-theme="dark"] {
+    .user-block {
+        &__menu {
+            color: inherit;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.theme-toggler {
+    background-color: rgba(37, 39, 41, 1);
+    width: 56px;
+    height: 56px;
+
+    svg {
+        transform: rotate(-30deg);
+    }
+}
+
+html[data-theme="dark"] {
+    .theme-toggler {
+        background-color: #fff;
+    }
+}
