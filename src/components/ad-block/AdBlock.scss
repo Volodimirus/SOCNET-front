@@ -1,0 +1,21 @@
+.ad-block {
+    height: 192px;
+    font-family: "LackItalic", sans-serif;
+    color: rgba(37, 39, 41, 1);
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    line-height: 64px;
+    border-radius: 20px;
+}
+
+// DARK THEME
+
+html[data-theme="dark"] {
+    .ad-block {
+        background-color: rgba(248, 250, 255, 4%);
+        color: rgba(248, 250, 255, 1);
+    }
+}
