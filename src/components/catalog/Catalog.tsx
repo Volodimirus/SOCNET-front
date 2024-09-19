@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import CatalogSettingsPanel from "./catalog-settings-panel/CatalogSettingsPanel";
+import CatalogFilterPanel from "./catalog-filter-panel/CatalogFilterPanel";
+
 import ThemeProviderInterface from "../../interfaces/ThemeProviderInterface";
 
 import "./Catalog.scss";
@@ -16,6 +18,7 @@ export default function Catalog({ isDark, onChange }: ThemeProviderInterface) {
     return (
         <div className="catalog container">
             <CatalogSettingsPanel theme={theme} />
+            <CatalogFilterPanel />
         </div>
     );
 }
