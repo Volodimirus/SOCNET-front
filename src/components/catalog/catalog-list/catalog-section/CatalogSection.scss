@@ -1,0 +1,26 @@
+.catalog-section {
+    width: 100%;
+    row-gap: 22px;
+
+    .catalog-section--title {
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 42px;
+    }
+
+    &--items {
+        display: flex;
+        flex-direction: column;
+        row-gap: 22px;
+    }
+}
+
+// DARK THEME
+
+html[data-theme="dark"] {
+    .catalog-section {
+        color: rgba(248, 250, 255, 1);
+    }
+}

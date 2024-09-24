@@ -1,0 +1,89 @@
+.catalog-section--item {
+    display: flex;
+    align-items: center;
+    height: 128px;
+    padding: 30px 32px;
+    width: 100%;
+    column-gap: 16px;
+    font-family: "Gilroy", sans-serif;
+
+    &-avatar {
+        width: 64px;
+        height: 64px;
+    }
+
+    &-is_premium {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(37, 39, 41, 1);
+        border-radius: 8px;
+
+        svg {
+            color: #fff;
+        }
+    }
+
+    &-info {
+        max-width: 362px;
+        margin-right: auto;
+    }
+
+    &-title {
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    &-text {
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &-btn {
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 20px;
+        max-height: 52px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 20px;
+        border: 2px solid rgba(37, 39, 41, 12%);
+        border-radius: 20px;
+        padding: 16px;
+
+        &.to-buy {
+            background-color: rgba(37, 39, 41, 1);
+            color: rgba(248, 250, 255, 1);
+        }
+
+        &.to-bag {
+            background-color: rgba(248, 250, 255, 0%);
+            color: #fff;
+        }
+    }
+}
+
+// DARK THEME
+
+html[data-theme="dark"] {
+    .catalog-section--item {
+        background-color: rgba(248, 250, 255, 4%);
+
+        &-btn {
+            border: 2px solid rgba(248, 250, 255, 5%);
+        }
+
+        &-is_premium {
+            background-color: rgba(37, 39, 41, 1);
+        }
+    }
+}
