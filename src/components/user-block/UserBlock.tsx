@@ -1,12 +1,8 @@
-import React from "react";
-
 import { AngleSmallDown } from "react-flaticons";
-
 import UserAvatar from "../../assets/images/user-avatar.png";
-
 import "./UserBlock.scss";
 
-export default function UserBlock({ theme }: { theme?: string }) {
+export default function UserBlock() {
     return (
         <div className="user-block">
             <button className="user-block__menu">

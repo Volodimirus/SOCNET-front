@@ -1,32 +1,17 @@
-import React, { useEffect, useState } from "react";
-
 import Logo from "../../assets/images/website-logo.png";
 import DarkLogo from "../../assets/images/website-logo_dark.png";
-
-import { Filter, Search, ShoppingBag, Bell } from "react-flaticons";
-
-import ThemeProviderInterface from "../../interfaces/ThemeProviderInterface";
-
-import "./AppHeader.scss";
 import UserBlock from "../user-block/UserBlock";
+import { Filter, Search, ShoppingBag, Bell } from "react-flaticons";
+import ThemeProviderInterface from "../../interfaces/ThemeProviderInterface";
+import "./AppHeader.scss";
 
-export default function AppHeader({
-    isDark,
-    onChange,
-}: ThemeProviderInterface) {
-    const [theme, setTheme] = useState<string>("light");
-
-    useEffect(() => {
-        if (isDark) setTheme("dark");
-        else setTheme("light");
-    }, [isDark]);
-
+export default function AppHeader({ isDark }: ThemeProviderInterface) {
     return (
         <header id="header" className="header container">
             <a href="/">
                 <img
                     className="header--logo"
-                    src={theme === "dark" ? DarkLogo : Logo}
+                    src={isDark ? DarkLogo : Logo}
                     alt="Website Logo"
                 />
             </a>

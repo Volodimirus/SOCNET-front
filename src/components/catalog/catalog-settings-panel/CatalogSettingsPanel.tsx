@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
-
 import Select from "react-select";
-
 import { AngleSmallDown } from "react-flaticons";
-
 import "./CatalogSettingsPanel.scss";
+import ThemeProviderInterface from "../../../interfaces/ThemeProviderInterface";
 
-export default function CatalogSettingsPanel({ theme }: { theme: string }) {
+export default function CatalogSettingsPanel({
+    isDark,
+}: ThemeProviderInterface) {
     const catalogVariants = [{ value: "facebook", label: "Facebook" }];
 
     return (
@@ -58,14 +57,13 @@ export default function CatalogSettingsPanel({ theme }: { theme: string }) {
                             option: (baseStyles) => ({
                                 ...baseStyles,
                                 backgroundColor: "transparent",
-                                color: theme === "light" ? "black" : "inherit",
+                                color: isDark ? "black" : "inherit",
                             }),
                             menu: (baseStyles) => ({
                                 ...baseStyles,
                                 backgroundColor: "transparent",
                             }),
                         }}
-                        // className="catalog-settings--variants"
                     />
                 </div>
             </div>

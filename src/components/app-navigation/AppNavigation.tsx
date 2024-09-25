@@ -1,26 +1,13 @@
-import React, { useState, useEffect } from "react";
-
 import { AngleSmallDown, Cube } from "react-flaticons";
-
 import RuIcon from "../../assets/images/ru.png";
-
 import ThemeProviderInterface from "../../interfaces/ThemeProviderInterface";
-
 import ThemeButton from "../theme-button/ThemeButton";
-
 import "./AppNavigation.scss";
 
 export default function AppNavigation({
     isDark,
     onChange,
 }: ThemeProviderInterface) {
-    const [theme, setTheme] = useState<string>("light");
-
-    useEffect(() => {
-        if (isDark) setTheme("dark");
-        else setTheme("light");
-    }, [isDark]);
-
     return (
         <nav className="app-navigation container">
             <div className="left-side">
@@ -31,7 +18,7 @@ export default function AppNavigation({
                     </div>
                 </button>
                 <ThemeButton
-                    theme={theme}
+                    isDark={isDark}
                     onChange={onChange}
                     className="left-side__button"
                 />
@@ -42,7 +29,7 @@ export default function AppNavigation({
             </div>
             <div className="middle-side">
                 <button className="middle-side__button middle-side__news">
-                    <a href="#">Новости</a>
+                    <a href="https://t.me/accsforyou_shop">Новости</a>
                 </button>
                 <button className="middle-side__button middle-side__rules">
                     <span>Правила</span>

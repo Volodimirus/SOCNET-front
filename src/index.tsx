@@ -1,4 +1,4 @@
-import React from "react";
+import { StrictMode } from "react";
 import MainPage from "./pages/main-page/MainPage";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -16,9 +16,9 @@ const router = createBrowserRouter([
 const root = createRoot(document.getElementById("root") as HTMLElement);
 
 root.render(
-    <React.StrictMode>
+    <StrictMode>
         <ThemeProvider>
             <RouterProvider router={router} />
         </ThemeProvider>
-    </React.StrictMode>
+    </StrictMode>
 );

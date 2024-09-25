@@ -4,8 +4,9 @@
     height: 128px;
     padding: 30px 32px;
     width: 100%;
-    column-gap: 16px;
     font-family: "Gilroy", sans-serif;
+    border-radius: 32px;
+    column-gap: 16px;
 
     &-avatar {
         width: 64px;
@@ -20,6 +21,8 @@
         align-items: center;
         background-color: rgba(37, 39, 41, 1);
         border-radius: 8px;
+        margin-left: 24px;
+        margin-right: 24px;
 
         svg {
             color: #fff;
@@ -60,6 +63,14 @@
         border-radius: 20px;
         padding: 16px;
 
+        &.price {
+            margin-right: 41px;
+        }
+
+        &.count {
+            margin-right: 31px;
+        }
+
         &.to-buy {
             background-color: rgba(37, 39, 41, 1);
             color: rgba(248, 250, 255, 1);
@@ -67,7 +78,6 @@
 
         &.to-bag {
             background-color: rgba(248, 250, 255, 0%);
-            color: #fff;
         }
     }
 }
@@ -80,6 +90,10 @@ html[data-theme="dark"] {
 
         &-btn {
             border: 2px solid rgba(248, 250, 255, 5%);
+
+            &.to-bag {
+                color: #fff;
+            }
         }
 
         &-is_premium {

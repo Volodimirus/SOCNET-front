@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./CatalogFilterPanel.scss";
 
 export default function CatalogFilterPanel() {

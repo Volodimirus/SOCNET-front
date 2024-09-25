@@ -1,21 +1,15 @@
-import React from "react";
-
 import { Moon, Sun } from "react-flaticons";
-
+import ThemeButtonInterface from "./ThemeButtonInterface";
 import "./ThemeButton.scss";
 
 export default function ThemeButton({
-    theme,
+    isDark,
     onChange,
     className,
-}: {
-    theme: string;
-    onChange: () => void;
-    className?: string;
-}) {
+}: ThemeButtonInterface) {
     return (
         <button className={`${className} theme-toggler`} onClick={onChange}>
-            {theme === "light" ? (
+            {!isDark ? (
                 <Moon fontSize={24} />
             ) : (
                 <Sun fontSize={24} color="black" />

@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./AdBlock.scss";
 
 export default function AdBlock() {

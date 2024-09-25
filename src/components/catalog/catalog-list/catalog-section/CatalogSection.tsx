@@ -1,10 +1,6 @@
-import React from "react";
-
 import CatalogSectionItem from "./catalog-section-item/CatalogSectionItem";
-
 import CatalogSectionProps from "./CatalogSectionPropsInterface";
 import CatalogSectionItemProps from "./catalog-section-item/CatalogSectionItemPropsInterface";
-
 import "./CatalogSection.scss";
 
 export default function CatalogSection({

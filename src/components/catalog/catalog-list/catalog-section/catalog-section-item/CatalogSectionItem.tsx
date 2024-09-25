@@ -1,11 +1,7 @@
-import React from "react";
-
 import CatalogSectionItemProps from "./CatalogSectionItemPropsInterface";
-
 import { Star } from "react-flaticons";
 import { ShoppingBagAdd } from "react-flaticons";
 import FacebookIcon from "../../../../../assets/images/facebook-icon.png";
-
 import "./CatalogSectionItem.scss";
 
 export default function CatalogSectionItem(props: CatalogSectionItemProps) {
@@ -21,9 +17,11 @@ export default function CatalogSectionItem(props: CatalogSectionItemProps) {
                 <h4 className="catalog-section--item-title">{props.title}</h4>
                 <p className="catalog-section--item-text">{props.text}</p>
             </div>
-            <div className="catalog-section--item-btn">{props.price}</div>
-            <div className="catalog-section--item-btn">{props.count} шт.</div>
-            <div className="catalog-section--item-btn">{props.sells}</div>
+            <div className="catalog-section--item-btn price">{props.price}</div>
+            <div className="catalog-section--item-btn count">
+                {props.count} шт.
+            </div>
+            <div className="catalog-section--item-btn sells">{props.sells}</div>
             <button className="catalog-section--item-btn to-buy">Купить</button>
             <button className="catalog-section--item-btn to-bag">
                 {<ShoppingBagAdd />}
