@@ -8,19 +8,10 @@ export default function CatalogList() {
             <CatalogSection
                 title="Facebook - Аккаунты"
                 catalogItems={catalogItems}
-                // catalogItems={[
-
-                //     {
-                //         title: "Facebook Autoreg",
-                //         price: 2.3,
-                //         count: 228,
-                //         sells: 52,
-                //         avatar: "",
-                //         isPremium: false,
-                //         boost: false,
-                //         text: "Excellent quality. Login:Pass:Email:EmailPass:Auth_token Confirmation by email + mail included I Format:",
-                //     },
-                // ]}
+            />
+            <CatalogSection
+                title="Facebook - Сообщества"
+                catalogItems={catalogItems}
             />
         </div>
     );
