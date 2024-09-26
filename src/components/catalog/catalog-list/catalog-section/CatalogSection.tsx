@@ -24,6 +24,9 @@ export default function CatalogSection({
                     />
                 ))}
             </div>
+            <button className="catalog-section--btn show-more">
+                Показать ещё
+            </button>
         </div>
     );
 }
